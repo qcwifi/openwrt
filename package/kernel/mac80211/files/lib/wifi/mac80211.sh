@@ -80,12 +80,14 @@ detect_mac80211() {
 		channel="11"
 		htmode=""
 		ht_capab=""
+		ssid=CQWIFI_$(cat /sys/class/ieee80211/${dev}/macaddress|awk -F ":" '{print $4""$5""$6 }'| tr a-z A-Z)
 
 		iw phy "$dev" info | grep -q 'Capabilities:' && htmode=HT20
 
 		iw phy "$dev" info | grep -q '5180 MHz' && {
 			mode_band="a"
 			channel="36"
+			ssid=CQWIFI_5G_$(cat /sys/class/ieee80211/${dev}/macaddress|awk -F ":" '{print $4""$5""$6 }'| tr a-z A-Z)
 			iw phy "$dev" info | grep -q 'VHT Capabilities' && htmode="VHT80"
 		}
 
@@ -113,13 +115,13 @@ detect_mac80211() {
 			set wireless.radio${devidx}.hwmode=11${mode_band}
 			${dev_id}
 			${ht_capab}
-			set wireless.radio${devidx}.disabled=1
+			set wireless.radio${devidx}.disabled=0
 
 			set wireless.default_radio${devidx}=wifi-iface
 			set wireless.default_radio${devidx}.device=radio${devidx}
 			set wireless.default_radio${devidx}.network=lan
 			set wireless.default_radio${devidx}.mode=ap
-			set wireless.default_radio${devidx}.ssid=OpenWrt
+			set wireless.default_radio${devidx}.ssid=${ssid}
 			set wireless.default_radio${devidx}.encryption=none
 EOF
 		uci -q commit wireless
