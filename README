@@ -7,3 +7,5 @@ make menuconfig
 make kernel_menuconfig -j6 V=s
 
 make -j6 V=s
+
+make package/luci-app-xx/compile V=99
