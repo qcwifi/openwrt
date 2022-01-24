@@ -47,7 +47,7 @@ ramips_setup_interfaces()
 	wavlink,wl-wn570ha1|\
 	wavlink,wl-wn575a3)
 		ucidef_add_switch "switch0" \
-			"0:lan" "1:lan" "2:lan" "3:lan" "4:wan" "6@eth0"
+			"4:lan:1" "2:lan:2" "1:wan" "6@eth0"
 		;;
 	buffalo,wcr-1166ds|\
 	elecom,wrc-1167fs|\
