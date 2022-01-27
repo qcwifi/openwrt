@@ -1171,7 +1171,7 @@ TARGET_DEVICES += xiaomi_mir3g
 define Device/xiaomi_mir3g-v2
   $(Device/dsa-migration)
   $(Device/uimage-lzma-loader)
-  IMAGE_SIZE := 14848k
+  IMAGE_SIZE := 16064k
   DEVICE_VENDOR := Xiaomi
   DEVICE_MODEL := Mi Router 3G
   DEVICE_VARIANT := v2

@@ -198,7 +198,7 @@ TARGET_DEVICES += mediatek_linkit-smart-7688
 
 define Device/mediatek_mt7628an-eval-board
   BLOCKSIZE := 64k
-  IMAGE_SIZE := 7872k
+  IMAGE_SIZE := 16064k
   DEVICE_VENDOR := MediaTek
   DEVICE_MODEL := MT7628 EVB
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport

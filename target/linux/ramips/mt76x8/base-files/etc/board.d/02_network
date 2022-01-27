@@ -36,6 +36,9 @@ ramips_setup_interfaces()
 	asus,rt-n12-vp-b1|\
 	hiwifi,hc5661a|\
 	mediatek,mt7628an-eval-board|\
+		ucidef_add_switch "switch0" \
+			"4:lan:1" "2:lan:2" "1:wan" "6@eth0"
+		;;
 	mercury,mac1200r-v2|\
 	totolink,lr1200|\
 	wavlink,wl-wn570ha1|\
