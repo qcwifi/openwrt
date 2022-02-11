@@ -1,4 +1,4 @@
-git clone -b 19.07 --single-branch https://github.com/qcwifi/openwrt.git && cd openwrt
+git clone -b 21.02 --single-branch https://github.com/qcwifi/openwrt.git && cd openwrt
 
 ./scripts/feeds update -a && ./scripts/feeds install -a
 
