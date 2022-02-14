@@ -99,7 +99,10 @@ ramips_setup_interfaces()
 	kn|\
 	kn_rc|\
 	mac1200rv2|\
-	miwifi-nano|\
+	miwifi-nano)
+		ucidef_add_switch "switch0" \
+			"4:lan:1" "2:lan:2" "1:wan" "6@eth0"
+		;;
 	mt7621|\
 	mt7628|\
 	mtc,wr1201|\
