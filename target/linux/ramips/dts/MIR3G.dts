@@ -95,7 +95,6 @@
 		partition@0 {
 			label = "Bootloader";
 			reg = <0x0 0x80000>;
-			read-only;
 		};
 
 		partition@80000 {
@@ -106,13 +105,11 @@
 		partition@c0000 {
 			label = "Bdata";
 			reg = <0xc0000 0x40000>;
-			read-only;
 		};
 
 		factory: partition@100000 {
 			label = "Factory";
 			reg = <0x100000 0x40000>;
-			read-only;
 		};
 
 		partition@140000 {
@@ -128,7 +125,6 @@
 		partition@1c0000 {
 			label = "reserved0";
 			reg = <0x1c0000 0x40000>;
-			read-only;
 		};
 
 		/* uboot expects to find kernels at 0x200000 & 0x600000
