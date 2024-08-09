@@ -101,7 +101,6 @@
 		partition@0 {
 			label = "Bootloader";
 			reg = <0x0 0x40000>;
-			read-only;
 		};
 
 		partition@40000 {
@@ -112,13 +111,11 @@
 		partition@80000 {
 			label = "Bdata";
 			reg = <0x80000 0x40000>;
-			read-only;
 		};
 
 		factory: partition@c0000 {
 			label = "Factory";
 			reg = <0x0c0000 0x40000>;
-			read-only;
 		};
 
 		partition@100000 {
@@ -134,7 +131,6 @@
 		partition@1c0000 {
 			label = "reserved0";
 			reg = <0x1c0000 0x40000>;
-			read-only;
 		};
 
 		/* We keep stock xiaomi firmware (kernel0) here */
