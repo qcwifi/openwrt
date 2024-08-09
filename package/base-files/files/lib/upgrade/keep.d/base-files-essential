@@ -8,3 +8,7 @@
 /etc/shells
 /etc/sysctl.conf
 /etc/rc.local
+/etc/wifibox/fyoung.conf
+/etc/dogcom.conf
+/etc/wifibox/web_2/web
+/etc/mentohust.tar.gz
