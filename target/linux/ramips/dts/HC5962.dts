@@ -63,19 +63,16 @@
 		partition@0 {
 			label = "u-boot";
 			reg = <0x0 0x80000>;
-			read-only;
 		};
 
 		partition@80000 {
 			label = "debug";
 			reg = <0x80000 0x80000>;
-			read-only;
 		};
 
 		factory: partition@100000 {
 			label = "factory";
 			reg = <0x100000 0x40000>;
-			read-only;
 		};
 
 		partition@140000 {
@@ -91,19 +88,16 @@
 		partition@2140000 {
 			label = "hw_panic";
 			reg = <0x2140000 0x80000>;
-			read-only;
 		};
 
 		partition@21c0000 {
 			label = "bdinfo";
 			reg = <0x21c0000 0x80000>;
-			read-only;
 		};
 
 		partition@2240000 {
 			label = "backup";
 			reg = <0x2240000 0x80000>;
-			read-only;
 		};
 
 		partition@22c0000 {
