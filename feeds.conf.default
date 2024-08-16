@@ -1,7 +1,7 @@
-src-git packages https://git.openwrt.org/feed/packages.git
+src-git packages https://github.com/qcwifi/packages.git;master
 src-git luci https://github.com/qcwifi/luci.git;master
-src-git routing https://git.openwrt.org/feed/routing.git
-src-git telephony https://git.openwrt.org/feed/telephony.git
+src-git routing https://github.com/qcwifi/routing.git;master
+src-git telephony https://github.com/qcwifi/telephony.git;master
 src-git passwall_packages https://github.com/qcwifi/openwrt-passwall-packages.git;main
 src-git passwall https://github.com/qcwifi/openwrt-passwall.git;main
 #src-git video https://github.com/openwrt/video.git
