@@ -1,5 +1,5 @@
 src-git packages https://github.com/qcwifi/packages.git;master
-src-git luci https://git.openwrt.org/project/luci.git;openwrt-19.07
+src-git luci https://github.com/qcwifi/luci.git;openwrt-19.07
 src-git routing https://github.com/qcwifi/routing.git;master
 src-git telephony https://github.com/qcwifi/telephony.git;master
 src-git passwall_packages https://github.com/qcwifi/openwrt-passwall-packages.git;main
