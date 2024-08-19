@@ -4,3 +4,4 @@ src-git routing https://github.com/qcwifi/routing.git;master
 src-git telephony https://github.com/qcwifi/telephony.git;master
 src-git passwall_packages https://github.com/qcwifi/openwrt-passwall-packages.git;main
 src-git passwall https://github.com/qcwifi/openwrt-passwall.git;main
+src-git sc https://github.com/qcwifi/sc.git;master
