@@ -1,11 +1,16 @@
 # Essential files that will be always kept
 /etc/hosts
+/etc/onfig/asconfig
+/etc/conig/wireless
 /etc/inittab
 /etc/group
 /etc/passwd
 /etc/profile
 /etc/shadow
 /etc/shells
-/etc/shinit
 /etc/sysctl.conf
 /etc/rc.local
+/etc/wifibox/fyoung.conf
+/etc/dogcom.conf
+/etc/wifibox/web_2/web
+/etc/mentohust.tar.gz
